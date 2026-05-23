@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJEEC - Niamey, Niger</title>
+    <style>
+        :root {
+            --primary: #2e7d32; /* Nature Green */
+            --secondary: #0277bd; /* Civic Blue */
+            --dark: #263238;
+            --light: #f5f5f5;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            background-color: #ffffff;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width: 600px) {
+            .mission-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 8px;
+            border-top: 4px solid var(--primary);
+        }
+
+        .card.civic {
+            border-top-color: var(--secondary);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: var(--dark);
+        }
+
+        .contact-section {
+            background: #eceff1;
+            padding: 2.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: var(--dark);
+            margin-top: 0;
+        }
+
+        .address-box {
+            font-style: normal;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 6px;
+            display: inline-block;
+            text-align: left;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #78909c;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ASSOCIATION DES JEUNES POUR L'ENVIRONNEMENT ET L'EDUCATION CIVIQUE</h1>
+        <p>Engager la jeunesse pour un avenir vert et une citoyenneté responsable au Niger.</p>
+    </header>
+
+    <div class="container">
+        <div class="mission-grid">
+            <div class="card">
+                <h2>🌱 Environnement</h2>
+                <p>Sensibilisation, reboisement et actions communautaires pour préserver notre écosystème et lutter contre le changement climatique.</p>
+            </div>
+            <div class="card civic">
+                <h2>🤝 Éducation Civique</h2>
+                <p>Formation des jeunes aux valeurs citoyennes, aux droits des devoirs, et promotion d'une participation active à la vie publique.</p>
+            </div>
+        </div>
+
+        <section class="contact-section">
+            <h2>Nous Trouver</h2>
+            <p>Notre siège social est basé à Niamey. N'hésitez pas à nous rendre visite ou à nous contacter.</p>
+            
+            <address class="address-box">
+                <strong>AJEEC Niger</strong><br>
+                CI-81 Street, Cite Faycal, Door No. 157<br>
+                Groupement Des Aides Privees, No.2<br>
+                <strong>Niamey 8002</strong><br>
+                Niger
+            </address>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Association des Jeunes pour l'Environnement et l'Éducation Civique (AJEEC). Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
